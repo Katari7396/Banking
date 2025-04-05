@@ -1,0 +1,125 @@
+body{
+    font-family: "Manrope", sans-serif !important;
+}
+.products-section {
+  padding: 3rem 0;
+  background-color: #EAF7FA;
+}
+
+.products-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 50px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.heading-text {
+  text-align: start;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.2;
+}
+
+.highlight-text {
+  color: #3593b0;
+}
+.institutions-text {
+  color: #000000;
+  display: inline-block;
+  position: relative;
+}
+
+.text-decoration {
+  text-decoration: none;
+  position: relative;
+  color: #3593b0;
+}
+
+.text-decoration::after {
+  content: "";
+  position: absolute;
+  right: 2px;
+  border-radius: 5px;
+  bottom: -5px; /* Adjust the underline position */
+  width: 162px; /* Adjust width of the underline */
+  height: 4px; /* Thickness of underline */
+  background-color: #3593b0; /* Underline color */
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+}
+
+.product-card {
+  display: block;
+  background: white;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  /* transform: translateY(-5px); */
+  border-color: #4a9b85;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-content {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.product-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.product-image {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.product-title {
+  font-size: 1rem;
+  font-family: "Manrope", sans-serif !important;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heading-text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
